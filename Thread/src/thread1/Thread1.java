@@ -1,7 +1,6 @@
+package thread1;
 
-package thread;
-
-public class Thread {
+public class Thread1 {
 
     
     public static void main(String[] args) {
@@ -11,15 +10,14 @@ public class Thread {
         T t2= new T('b');
         t2.start();
         
+        
         R r= new R('c');
         Thread t3 = new Thread(r);
-        t3
+        t3.start();
         
-    }
+        R r2= new R('d');
+        Thread t4 = new Thread(r2);
+        t4.start();
 
-    private Thread(R r) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    
 }
